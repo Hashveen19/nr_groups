@@ -370,12 +370,12 @@ export default function NRGroupWebsite() {
                 </div>
                 <div style={{ position:"absolute", inset:0, backgroundImage:`linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px)`, backgroundSize:"88px 88px", opacity:0.6, pointerEvents:"none" }} />
                 <div className="hero-content" style={{ position:"relative", zIndex:2, padding:"0 64px", maxWidth:1280, width:"100%" }}>
-                    <div className="h-label sans" style={{ fontSize:10, fontWeight:500, letterSpacing:"0.28em", textTransform:"uppercase" as const, color:GOLD, marginBottom:52, display:"flex", alignItems:"center", gap:12 }}>
+                    <div className="h-label sans" style={{ fontSize:10, fontWeight:500, letterSpacing:"0.28em", textTransform:"uppercase" as const, color:GOLD, marginBottom:28, display:"flex", alignItems:"center", gap:12 }}>
                         <span style={{ width:32, height:1, background:GOLD, opacity:0.6, display:"inline-block" }}></span>
                         NR Group · Est. 1990 · West Palm Beach, Florida
                         <span style={{ width:32, height:1, background:GOLD, opacity:0.6, display:"inline-block" }}></span>
                     </div>
-                    <h1 className="h-title serif hero-title shimmer-heading section-h2" style={{ fontWeight:300, fontSize:"clamp(38px,4.5vw,68px)", lineHeight:1.12, letterSpacing:"0.01em", color:TEXT_PRIMARY, marginBottom:36, maxWidth:760 }}>
+                    <h1 className="h-title serif hero-title shimmer-heading section-h2" style={{ fontWeight:300, fontSize:"clamp(54px,8vw,110px)", lineHeight:0.93, letterSpacing:"0.02em", color:TEXT_PRIMARY, marginBottom:28, maxWidth:820 }}>
                         Architectural <span style={{ color:GOLD, fontStyle:"italic", textShadow:`0 0 60px ${GOLD_GLOW}` }}>Glazing Systems</span>
                         <br />&amp; Engineered Building Envelopes
                     </h1>
@@ -539,43 +539,6 @@ export default function NRGroupWebsite() {
                             <div key={city} className="nr-reveal" style={{ padding:"24px 28px", background:GLASS_BG, border:`1px solid ${GLASS_BORDER}`, borderTop:"none" }}>
                                 <div className="serif" style={{ fontSize:16, fontWeight:400, color:TEXT_PRIMARY, marginBottom:4 }}>{city}</div>
                                 <div className="sans" style={{ fontSize:10, fontWeight:400, letterSpacing:"0.14em", textTransform:"uppercase" as const, color:TEXT_SUBTLE }}>{role}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-
-            {/* ── MARKETS ─────────────────────────────────────────────────────────── */}
-            <section style={{ background:BG_BASE, padding:"100px 64px", borderTop:`1px solid ${DIVIDER}` }}>
-                <div style={{ maxWidth:1280, margin:"0 auto" }}>
-                    <div style={{ marginBottom:64 }}>
-                        <div className="sans" style={{ fontSize:10, fontWeight:500, letterSpacing:"0.28em", textTransform:"uppercase" as const, color:GOLD, marginBottom:16, display:"flex", alignItems:"center", gap:12 }}>
-                            <span style={{ width:24, height:1, background:GOLD, opacity:0.5, display:"inline-block" }}></span>
-                            Markets Served
-                        </div>
-                        <h2 className="serif" style={{ fontSize:"clamp(28px,3.5vw,48px)", fontWeight:300, color:TEXT_PRIMARY, lineHeight:1.1, maxWidth:580, margin:0 }}>
-                            Built for Every Sector of the{" "}
-                            <span style={{ color:GOLD, fontStyle:"italic" }}>Built Environment</span>
-                        </h2>
-                    </div>
-                    <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:32 }} className="grid-4">
-                        {[
-                            ["🏢","COMMERCIAL","Office towers, retail and mixed-use across North America requiring FBC-compliant curtain wall and window wall systems."],
-                            ["🎰","CASINO & ENTERTAINMENT","Iconic venues — Seminole Hard Rock, Scarlet Pearl — requiring bespoke facade solutions for high-traffic, high-profile environments."],
-                            ["🏨","HOSPITALITY","Hotels and resorts demanding premium aesthetics, weather performance and acoustic separation across the Caribbean and North America."],
-                            ["🏙️","RESIDENTIAL HIGH-RISE","Luxury condominiums requiring impact-rated, thermally-efficient glazing envelope systems meeting stringent FBC codes."],
-                            ["✈️","TRANSPORTATION","Airport terminals including Miami, Dallas-Fort Worth, Fort McMurray and LF Wade Bermuda — engineered for extreme conditions."],
-                            ["🏥","HEALTHCARE","Hospitals and medical facilities requiring durable, thermally efficient facade systems with low-maintenance performance."],
-                            ["🏛️","GOVERNMENT","Government and civic buildings requiring FBC-compliant, long-life glazing solutions designed for institutional longevity."],
-                            ["🎓","EDUCATION","Schools and universities requiring durable, impact-rated, energy-efficient window systems built to withstand decades of use."],
-                        ].map(([icon,title,desc]) => (
-                            <div key={title as string} style={{ padding:"28px 24px", background:BG_SURFACE, border:`1px solid ${DIVIDER}`, display:"flex", flexDirection:"column" }}>
-                                <div style={{ width:44, height:44, background:`rgba(63,155,240,0.1)`, border:`1px solid rgba(63,155,240,0.18)`, display:"flex", alignItems:"center", justifyContent:"center", marginBottom:20, fontSize:20, flexShrink:0 }}>
-                                    {icon}
-                                </div>
-                                <div className="sans" style={{ fontSize:10, fontWeight:600, letterSpacing:"0.18em", textTransform:"uppercase" as const, color:TEXT_PRIMARY, marginBottom:10 }}>{title as string}</div>
-                                <div className="sans" style={{ fontSize:12, fontWeight:300, color:TEXT_SECONDARY, lineHeight:1.75, flexGrow:1 }}>{desc as string}</div>
                             </div>
                         ))}
                     </div>
